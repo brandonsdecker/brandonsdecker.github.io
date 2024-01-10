@@ -58,3 +58,29 @@ footer {
     background-color: #333;
     color: #fff;
 }
+
+
+
+/* Common styles for both pages */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* Homework page specific styles */
+.homework-content {
+    /* Add specific styles for the "Homework" page content */
+}
+
+/* Projects page specific styles */
+.projects-content {
+    /* Add specific styles for the "Projects" page content */
+}
+
+
