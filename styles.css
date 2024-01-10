@@ -73,14 +73,21 @@ nav ul {
     list-style-type: none;
 }
 
-/* Homework page specific styles */
-.homework-content {
-    /* Add specific styles for the "Homework" page content */
+/* Add styles for collapsible sections and dots */
+.collapsible {
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Center content vertically */
 }
 
-/* Projects page specific styles */
-.projects-content {
-    /* Add specific styles for the "Projects" page content */
+.collapsible-dot {
+    width: 10px; /* Adjust the size of the dot */
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px; /* Add some space between the dot and the header text */
+    background-color: #ccc; /* Color of the dot */
 }
 
-
+.collapsible-content {
+    display: none;
+}
