@@ -78,6 +78,13 @@ nav ul {
     cursor: pointer;
     display: flex;
     align-items: center; /* Center content vertically */
+    position: relative; /* Add this for positioning the ::before element */
+}
+
+.collapsible::before {
+    content: "•"; /* Use a dot or any other character you prefer */
+    font-size: 16px; /* Adjust the size of the dot or tick */
+    margin-right: 8px; /* Add some space between the dot and the header text */
 }
 
 .collapsible-dot {
