@@ -73,41 +73,6 @@ nav ul {
     list-style-type: none;
 }
 
-/* Add styles for collapsible sections and dots */
-.collapsible {
-    cursor: pointer;
-    display: flex;
-    align-items: center; /* Center content vertically */
-    position: relative; /* Add this for positioning the ::before element */
-}
-
-.collapsible::before {
-    content: "•"; /* Use a dot or any other character you prefer */
-    font-size: 16px; /* Adjust the size of the dot or tick */
-    margin-right: 8px; /* Add some space between the dot and the header text */
-}
-
-.collapsible-dot {
-    width: 10px; /* Adjust the size of the dot */
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 8px; /* Add some space between the dot and the header text */
-    background-color: #ccc; /* Color of the dot */
-}
-
-.collapsible-content {
-    display: none;
-}
-
-
-/* Add styles for the collapsible markers (ticks or dots) */
-.collapsible-marker {
-    width: 10px; /* Adjust the size of the marker */
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 8px; /* Add some space between the marker and the header text */
-    background-color: #ccc; /* Color of the marker */
-}
 
 
 
