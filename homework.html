@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add CSS styles to control the appearance of collapsible sections */
+        .collapsible {
+            cursor: pointer;
+        }
+        .collapsible-content {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,37 +29,52 @@
     </header>
 
     <main>
-
         <section>
             <h2>Time and Space</h2>
-            <ul>
-                <li>Wilkins replication with article</li>
-                <a href="https://github.com/brandonsdecker/out-of-time/blob/main/Wilkins%20(2017).pdf" target="_blank">Wilkins article</a>
-                <a href="https://github.com/brandonsdecker/out-of-time/blob/main/Bias and Efficiency Time Models.R" target="_blank">Wilkins Replication Script</a>
-                <a href="https://drive.google.com/uc?export=download&id=1Fn7lLofjlQtpQ_7k1-nzouVuxzLt6s0d">Wilkins (2017) PDF</a>
-                <a href="https://drive.google.com/uc?export=download&id=1-n3x0QhiwcQpgp7-CymuJkp-_y5o3GVZ">Try this</a>
-                <li>Homework 2</li>
-                <li>Homework 3</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>POLS 8105: American Political Development</h2>
-            <ul>
-            <h3>January 9 - Introduction and Syllabus</h3>
-               <li><a href="https://drive.google.com/uc?export=download&id=1WyZXaWs1nTdg0Bpc2k3ylzsJmIzz7b37">Syllabus</a></li>
-            
-            <h3>January 16 - What is APD?</h3>
-            </ul>
+            <!-- List items here -->
         </section>
 
+        <section>
+            <h2>POLS 8105: American Political Development</h2>
+            <div class="collapsible" onclick="toggleCollapsible('january9')">
+                <h3>January 9 - Introduction and Syllabus</h3>
+            </div>
+            <div class="collapsible-content" id="january9">
+                <ul>
+                    <li><a href="https://drive.google.com/uc?export=download&id=1WyZXaWs1nTdg0Bpc2k3ylzsJmIzz7b37">Syllabus</a></li>
+                    <!-- Add more items here if needed -->
+                </ul>
+            </div>
+
+            <div class="collapsible" onclick="toggleCollapsible('january16')">
+                <h3>January 16 - What is APD?</h3>
+            </div>
+            <div class="collapsible-content" id="january16">
+                <ul>
+                    <!-- Add items for January 16 here if needed -->
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Brandon Decker</p>
     </footer>
+
+    <script>
+        // JavaScript function to toggle the visibility of collapsible sections
+        function toggleCollapsible(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
+
 
 
 
