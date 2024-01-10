@@ -98,3 +98,16 @@ nav ul {
 .collapsible-content {
     display: none;
 }
+
+
+/* Add styles for the collapsible markers (ticks or dots) */
+.collapsible-marker {
+    width: 10px; /* Adjust the size of the marker */
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px; /* Add some space between the marker and the header text */
+    background-color: #ccc; /* Color of the marker */
+}
+
+
+
