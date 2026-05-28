@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching — Brandon Decker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Brandon Decker</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html" class="active">Teaching</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="mailto:brandon.decker@uga.edu">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="page-header">
+    <h1>Teaching</h1>
+  </div>
+
+  <!-- TEACHING PHILOSOPHY NOTE -->
+  <div class="section">
+    <p style="font-size:1rem; color:var(--dark-gray); line-height:1.8; max-width:640px;">
+      My teaching centers on helping students understand American political institutions
+      through evidence-based reasoning. I emphasize the connection between scholarly research
+      and contemporary political questions, encouraging students to think critically about
+      how political actors — legislators, donors, and voters — navigate uncertainty and
+      pursue their interests within institutional constraints.
+    </p>
+  </div>
+
+  <!-- UNIVERSITY OF GEORGIA -->
+  <div class="section">
+    <p class="section-label">University of Georgia</p>
+    <div class="paper-list">
+
+      <div class="paper-card jmp">
+        <div class="paper-meta">
+          <span class="paper-badge">Upcoming</span>
+        </div>
+        <p class="paper-title" style="font-style:normal;">POLS 1101: Introduction to American Politics</p>
+        <p class="paper-authors">Instructor of Record</p>
+        <div class="paper-meta">
+          <span class="paper-status">Fall 2026 · Athens, GA</span>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <p class="paper-title" style="font-style:normal;">POLS 1101: Introduction to American Politics</p>
+        <p class="paper-authors">Graduate Teaching Assistant</p>
+        <div class="paper-meta">
+          <span class="paper-status">Spring 2026 &amp; Summer 2026 · Supervising instructor: Dr. Jeffrey Glas</span>
+        </div>
+        <div class="paper-meta" style="margin-top:0.4rem;">
+          <span class="paper-badge">Outstanding Early Career TA Award · Spring 2026</span>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <p class="paper-title" style="font-style:normal;">POLS 1101: Introduction to American Politics</p>
+        <p class="paper-authors">Graduate Teaching Assistant</p>
+        <div class="paper-meta">
+          <span class="paper-status">Fall 2025 · Supervising instructor: Dr. Alexa Bankert</span>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <p class="paper-title" style="font-style:normal;">POLS 1101: Introduction to American Politics</p>
+        <p class="paper-authors">Graduate Teaching Assistant</p>
+        <div class="paper-meta">
+          <span class="paper-status">Summer 2025 · Supervising instructor: Dr. Jeffrey Glas</span>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <p class="paper-title" style="font-style:normal;">POLS 1101: Introduction to American Politics</p>
+        <p class="paper-authors">Graduate Teaching Assistant</p>
+        <div class="paper-meta">
+          <span class="paper-status">Summer 2023 · Supervising instructor: Dr. Jeffrey Glas · Enrollment: 54</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- UNIVERSITY OF KANSAS -->
+  <div class="section">
+    <p class="section-label">University of Kansas</p>
+    <div class="paper-list">
+
+      <div class="paper-card">
+        <p class="paper-title" style="font-style:normal;">POLS 110: Introduction to American Politics</p>
+        <p class="paper-authors">Graduate Teaching Assistant</p>
+        <div class="paper-meta">
+          <span class="paper-status">Fall 2021 &amp; Spring 2022 · Supervising instructor: Dr. Mark Joslyn · Enrollment: 60</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RESEARCH EXPERIENCE -->
+  <div class="section">
+    <p class="section-label">Research Experience</p>
+    <div class="paper-list">
+
+      <div class="paper-card">
+        <p class="paper-title" style="font-style:normal;">Research Assistant to Dr. Garrett Vande Kamp</p>
+        <p class="paper-authors">University of Georgia</p>
+        <div class="paper-meta">
+          <span class="paper-status">Fall 2023 · Spring 2024 · Fall 2024 · Spring 2025</span>
+        </div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)">
+          <span class="arrow">›</span> Details
+        </button>
+        <div class="paper-abstract-body">
+          <p class="paper-abstract">
+            Assisted with research on measurement error in spatially lagged variables,
+            including projects involving spatial autoregressive models, spatial lag of X
+            models, and spatial Durbin models.
+          </p>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <p class="paper-title" style="font-style:normal;">Research Assistant to Dr. David Cottrell and Dr. Christina Boyd</p>
+        <p class="paper-authors">University of Georgia</p>
+        <div class="paper-meta">
+          <span class="paper-status">Fall 2022 · Spring 2023</span>
+        </div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)">
+          <span class="arrow">›</span> Details
+        </button>
+        <div class="paper-abstract-body">
+          <p class="paper-abstract">
+            Collected, coded, and organized candidate statements of intention to run for
+            office in southern states using R and Excel.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Brandon Decker · University of Georgia · <a href="mailto:brandon.decker@uga.edu">brandon.decker@uga.edu</a></p>
+</footer>
+
+<script>
+function toggleAbstract(btn) {
+  btn.classList.toggle('open');
+  const body = btn.nextElementSibling;
+  body.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
