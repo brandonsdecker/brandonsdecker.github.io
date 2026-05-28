@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandon Decker — Political Science</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Brandon Decker</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="mailto:brandon.decker@uga.edu">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text-col">
+      <h1 class="hero-name">Brandon Decker</h1>
+      <p class="hero-title">
+        Ph.D. Candidate in Political Science<br>
+        School of Public and International Affairs<br>
+        University of Georgia
+      </p>
+      <p class="hero-bio">
+        I study American political institutions, congressional behavior, and campaign finance.
+        My research examines how the geographic evolution of legislators' donor coalitions
+        shapes their career ambitions — asking why some House members pursue higher office
+        while others choose to stay. I use discrete-time event history models and large-scale
+        individual contribution data to connect the campaign finance, political ambition,
+        and surrogate representation literatures.
+      </p>
+      <div class="hero-links">
+        <a href="mailto:brandon.decker@uga.edu" class="hero-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+        <a href="Decker_CV_May_2026_CV.pdf" class="hero-link" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          CV
+        </a>
+        <a href="research.html" class="hero-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Research
+        </a>
+      </div>
+    </div>
+    <div class="hero-image-col">
+      <img src="images/decker_headshot_2026.jpeg" alt="Brandon Decker" class="headshot">
+    </div>
+  </div>
+
+  <!-- RESEARCH INTERESTS -->
+  <div class="section">
+    <p class="section-label">Research Interests</p>
+    <div class="tags">
+      <span class="tag">American political institutions</span>
+      <span class="tag">Congressional behavior</span>
+      <span class="tag">Political ambition</span>
+      <span class="tag">Campaign finance</span>
+      <span class="tag">Donor networks</span>
+      <span class="tag">Electoral behavior</span>
+      <span class="tag">Separation of powers</span>
+      <span class="tag">Political methodology</span>
+      <span class="tag">Spatial modeling</span>
+      <span class="tag">Time series analysis</span>
+    </div>
+  </div>
+
+  <!-- WORKING PAPERS -->
+  <div class="section">
+    <p class="section-label">Working Papers</p>
+    <div class="paper-list">
+
+      <div class="paper-card jmp">
+        <p class="paper-title">
+          <a href="2026_Progressive_Ambition_and_Donors.pdf" target="_blank">
+            "Donor Coalition Evolution and Congressional Career Trajectory"
+          </a>
+        </p>
+        <p class="paper-authors">Brandon Decker</p>
+        <div class="paper-meta">
+          <span class="paper-status">Working paper · Presented at MPSA 2026</span>
+        </div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)">
+          <span class="arrow">›</span> Abstract
+        </button>
+        <div class="paper-abstract-body">
+          <p class="paper-abstract">
+            Members of Congress make career decisions under uncertainty. Before a statewide
+            election has revealed their electoral support beyond their district, House members
+            must assess whether the financial and organizational infrastructure for a competitive
+            Senate or gubernatorial campaign exists. This paper argues that the geographic
+            evolution of a member's donor coalition provides this missing signal. Using
+            individual-level contribution records from DIME for 1,337 House members across
+            23,118 member-election cycles from 1994 to 2022, I estimate discrete-time event
+            history models predicting the decision to run for higher office as a function of
+            donor coalition dynamics. Members whose donor coalitions remain geographically
+            stable are significantly less likely to pursue progressive ambition, with every
+            10-percentage-point increase in donor overlap associated with a 47% decrease in
+            the odds of running for higher office. Members who experience geographic expansion
+            in their donor base face a 23% increase in the odds of running for every
+            10-percentage-point increase in out-of-district donor share.
+          </p>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <p class="paper-title">
+          "I'm Very Comfortable Where I Am: Static Ambition in the U.S. House of Representatives"
+        </p>
+        <p class="paper-authors">Brandon Decker</p>
+        <div class="paper-meta">
+          <span class="paper-status">Working paper</span>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <p class="paper-title">
+          "Accounting for Measurement Error in Spatially Lagged Variables"
+        </p>
+        <p class="paper-authors">Garrett Vande Kamp and Brandon Decker</p>
+        <div class="paper-meta">
+          <span class="paper-status">Working paper · Presented at MPSA 2024</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TEACHING PREVIEW -->
+  <div class="section">
+    <p class="section-label">Teaching</p>
+    <div class="teaching-grid">
+      <div class="teaching-card upcoming">
+        <span class="teaching-badge">Upcoming</span>
+        <p class="teaching-course">POLS 1101: Introduction to American Politics</p>
+        <p class="teaching-role">Instructor of Record</p>
+        <p class="teaching-detail">University of Georgia · Fall 2026</p>
+      </div>
+      <div class="teaching-card">
+        <p class="teaching-course">POLS 1101: Introduction to American Politics</p>
+        <p class="teaching-role">Graduate Teaching Assistant</p>
+        <p class="teaching-detail">University of Georgia · Spring &amp; Summer 2026</p>
+        <p class="teaching-detail">Outstanding Early Career TA Award, Spring 2026</p>
+      </div>
+    </div>
+    <p style="margin-top:1rem; font-size:0.875rem;">
+      <a href="teaching.html" style="color:var(--navy); font-weight:500;">Full teaching history →</a>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Brandon Decker · University of Georgia · <a href="mailto:brandon.decker@uga.edu">brandon.decker@uga.edu</a></p>
+</footer>
+
+<script>
+function toggleAbstract(btn) {
+  btn.classList.toggle('open');
+  const body = btn.nextElementSibling;
+  body.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
